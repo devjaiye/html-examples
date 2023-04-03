@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sidebar</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .sidebar{
+            top: 0;
+            left: 0;
+            z-index: 1;
+            overflow-x: hidden;
+            position: fixed;
+            height: 100%;
+            width: 160px;
+            background-color: rgb(5, 7, 6);
+            padding-top: 16px;
+        }
+
+        .sidebar a{
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            color: bisque;
+            font-size: 20px;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+            }
+
+        .main{
+            margin-left: 160px;
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-width: 450px) {
+            .sidebar{
+                padding-top: 15px;
+            }
+            .sidebar a{
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#"><i class="fa fa-home"></i> Home</a>
+        <a href="#"><i class="fa fa-male"></i> Profile</a>
+        <a href="#"><i class="fa fa-group"></i> Meeting</a>
+        <a href="#"><i class="fa fa-home"></i> Home</a>
+        <a href="#"><i class="fa fa-envelope"></i> Home</a>
+    </div>
+
+    <div class="main">
+        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset 
+            concludaturque et eum, altera fabulas ut quo. Atqui causae 
+            gloriatur ius te, id agam omnis evertitur eum. Affert laboramus 
+            repudiandae nec et. Inciderint efficiantur his ad. Eum no 
+            molestiae voluptatibus.</p>
+
+            <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset 
+                concludaturque et eum, altera fabulas ut quo. Atqui causae 
+                gloriatur ius te, id agam omnis evertitur eum. Affert laboramus 
+                repudiandae nec et. Inciderint efficiantur his ad. Eum no 
+                molestiae voluptatibus.</p>
+       
+    </div>
+</body>
+</html>

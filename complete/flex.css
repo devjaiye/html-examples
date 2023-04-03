@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+   flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.one{
+    background: yellow;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+    flex-grow: 1;
+}
+
+.two{
+    background: orange;
+    width: 30%;
+    height: 120px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+    flex-grow: 1;
+}
+
+.three{
+    background: orangered;
+    width: 30%;
+    height: 120px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+    /* flex-grow: 2; */
+}
+
+.four{
+    background: yellowgreen;
+    width: 30%;
+    height: 120px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.five{
+    background: blue;
+    width: 30%;
+    height: 120px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+.six{
+    background: #dd0861;
+    width: 30%;
+    height: 120px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+.seven{
+    background: rgb(24, 54, 82);
+    width: 30%;
+    height: 120px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+.eight{
+    background: lime;
+    width: 20%;
+    height: 120px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.nine{
+    background: rgba(66, 10, 112, 0.39);
+    width: 20%;
+    height: 120px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.ten{
+    background: rgb(255, 75, 201);
+    width: 20%;
+    height: 120px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.eleven{
+    background: #dd0861;
+    width: 20%;
+    height: 120px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+.twelve{
+    background: rgb(24, 54, 82);
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 600px) {
+.eight{
+    background: #dd0861;
+}
+
+.seven{
+    background: #cfdd08;
+}
+
+.two{
+    background: blueviolet;
+}
+
+.four{
+    background: #ffc579;
+}
+
+}

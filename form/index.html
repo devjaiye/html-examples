@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="../css/form.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- number input -->
+    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <!-- country phone code -->
+    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+<script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+</head>
+<body>
+
+      
+   <!-- form section  -->
+   <div class="container">
+        <form id="contact" action="" method="post">
+            <h1>Registration Form</h1>
+            <h3>Fill the form below and press the submit button!</h3>
+            <div class="row">
+                <!-- first column -->
+                <div class="column">                        
+                    <fieldset>
+                        <input type="text" placeholder="Full Name *" name="name" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" placeholder="Nationality *" name="nationality" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input type="number" placeholder="Passport No" name="pass-no" autofocus>
+        
+                        <input type="text" placeholder="Passport expriration date " name="pass-exDate"
+                        onfocus="(this.type = 'date')" required autofocus>
+                    </fieldset>
+                    <!-- adding all country code list -->
+                    <fieldset>
+                        <input type="text" placeholder="Phone number *" name="phone" id="phone" required autofocus>
+                    </fieldset>
+                </div>
+                
+                <!-- second column -->
+                <div class="column">
+                    <fieldset>
+                        <input type="email" placeholder="Your email *" name="email" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" placeholder="Date of birth *" name="date"
+                         onfocus="(this.type = 'date')" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <p>Gender</p>
+                        <div class="radio">
+                            <input type="radio" id="male" name="gender" required>
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="female" name="gender" required>
+                            <label for="female">Female</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" placeholder="Address *" name="address" required autofocus>
+                    </fieldset>
+                </div>
+
+                <!-- thrid column -->
+                <div class="column">
+                    <fieldset>
+                        <input type="text" placeholder="Marital status *" name="mStatus" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" placeholder="Native language *" name="nLanguage" autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" placeholder="Official language *" name="oLanguage" autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" placeholder="Highest level of education *" name="address" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <div class="drop-down">
+                            <select name = "dropdown" required autofocus>
+                                <option value="" disabled selected>Proposed level of study</option>
+                                <option value = "Postgraduate">Postgraduate</option>
+                                <option value = "Bachelor">Bachelor</option>
+                                <option value = "Masters">Masters</option>
+                                <option value = "Doctoral">Doctoral</option>
+                         </select>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+           
+            <!-- second row -->
+            <div class="row">
+                  <!-- first column -->
+                  <div class="column">
+                    <!-- <p>Proficiency Test</p>                       -->
+                    <fieldset>
+                        <input type="number" placeholder="TOFEL score " name="T_score" autofocus>
+                        <input type="number" placeholder="SAT score " name="S_score" autofocus>
+                        <input type="number" placeholder="ACT score " name="A_score" autofocus>
+                        <input type="number" placeholder="Duolingo score " name="D_score" autofocus>
+                    </fieldset>
+                </div>
+                
+                <!-- second column -->
+                <div class="column">
+                    <fieldset>
+                        <select name="drop-down" required autofocus>
+                            <option value="" disabled selected >Source of study finance</option>
+                            <option value="Apply scholarship">Apply scholarship</option>
+                            <option value="Study loan"> Study loan</option>
+                            <option value="Self support">Self support</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </fieldset>
+
+                    <p>Financial supporter if any</p>                    
+                    <fieldset>
+                        <input type="text" placeholder="name" name="supporter-name">
+                        <input type="email" placeholder="email" name="supporter-email">
+                        
+                    </fieldset>
+                </div>
+
+                <!-- thrid column -->
+                <div class="column">
+                   
+                    <fieldset>
+                        <input type="text" placeholder="Enter supporter address" name="supporter-address">
+                        <p>Relationship with supporter</p>
+                        <input type="text" placeholder="e.g. Father " name="relationship-supporter">
+                        <p>Supporter's Phone number</p>
+                        <input type="text" placeholder="Phone number" name="supporter-phoneNo" id="phone">
+                    </fieldset>
+                </div>
+            </div>
+
+            <!-- submit button -->
+            <fieldset>
+                <button type="submit" id="button">Submit Now</button>
+            </fieldset>
+        </form>
+    </div>
+ 
+    <!-- Javascript to initialize the code list -->
+    <script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+     separateDialCode: true
+     });
+  </script>
+</body>
+</html>

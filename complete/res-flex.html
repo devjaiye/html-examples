@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            font-family: Arial;
+            background: rgb(121, 248, 130);
+        }
+        .header{
+            text-align: center;
+            background-color: blueviolet;
+            color: white;
+            padding: 100px;
+        }
+        .navbar{
+            display: flex;
+            background: black;
+            text-align: center;
+            justify-content: space-evenly;
+        }
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            padding: 14px;
+        }
+        .navbar a:hover{
+            color: yellowgreen;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .left{
+             flex: 30%;
+            padding: 10px 10px;
+            background: gray;
+            
+        }
+        .image{
+            background: orange;
+            width: 100%;
+            padding: 20px;
+            margin-top: 10px;
+        }
+        .main{
+            flex: 70%;
+            padding: 10px 10px;
+        }
+
+        footer{
+            text-align: center;
+            background-color: rgb(51, 33, 68);
+            color: white;
+            padding: 50px;
+        }
+
+        @media screen and (max-width: 700px) {
+                .navbar, .container{
+                    flex-direction: column;
+                }
+        }
+
+        @media only screen and (orientation: landscape) {
+                body{
+                    background: rgb(238, 144, 144);
+                }
+        }
+
+    </style>
+</head>
+<body>
+    <div style="background-color: orange; padding: 4px; text-align: center;">
+        <p style="font-weight: 700">This is responsive layout with flexbox</p>
+    </div>
+
+    <div class="header">
+        <h2>This is the banner section</h2>
+        <p>Get <b>started</b> today...</p>
+    </div>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <h3>About Me</h3>
+            <p>Profile photo</p>
+           <div class="image" style="height: 200px">Image</div>
+           <p>Some text about me in culpa qui officia deserunt mollit anim..
+            Some text about me in culpa qui officia deserunt mollit anim..
+           </p>
+
+           <h3>More Info</h3>
+           <p>Lorem ipsum dolor section</p>
+           <div class="image" style="height: 60px;">Image</div>
+           <div class="image" style="height: 60px;">Image</div>
+           <div class="image" style="height: 60px;">Image</div>
+        </div>
+
+        <main class="main">
+            <h1>Title Heading</h1>
+            <h4>Title description, Jan 17, 2023</h4>
+            <div class="image" style="height: 200px;">Image</div>
+            <p> Some text </p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id 
+                est laborum consectetur adipiscing elit, sed do 
+                eiusmod tempor incididunt ut labore 
+                et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis 
+                nostrud exercitation ullamco.
+            </p>
+
+            <h1>Title Heading</h1>
+            <h4>Title description, Jan 17, 2023</h4>
+            <div class="image" style="height: 200px;">Image</div>
+            <p> Some text </p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id 
+                est laborum consectetur adipiscing elit, sed do 
+                eiusmod tempor incididunt ut labore 
+                et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis 
+                nostrud exercitation ullamco.
+            </p>
+        </main>
+    </div>
+    <footer>
+          <h3>Developed by Gonative Tech</h3>  
+    </footer>
+
+</body>
+</html>
