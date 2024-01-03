@@ -3,10 +3,10 @@ body{
     padding: 0;
     display: flex; 
     justify-content: center;
-    background-color: rgb(52, 42, 42);
+    background-color: rgb(24, 23, 23);
 }    
 .content{
-    margin: 20px;
+    margin: 40px;
     max-width: 350px;
     display: flex;
     height: auto;
